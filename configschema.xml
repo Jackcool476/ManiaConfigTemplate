@@ -5,13 +5,13 @@
   <Groups>
     <Group name="example1" display="Example Group">
       <Property name="item1" type="Example Type" defaultvalue="1" display="Item 1">
-        <HelpText>Orchestrates the theme in Green Hill Zone Act 1.</HelpText>
+        <HelpText>Example of an item with 3 or more options.</HelpText>
       </Property>
-      <Property name="gh2" type="Green Hill" defaultvalue="2" display="Act 2">
-        <HelpText>Orchestrates the theme in Green Hill Zone Act 2.</HelpText>
+      <Property name="item2" type="bool" defaultvalue="false" display="Item 2">
+        <HelpText>Example of an item with a true and false option.</HelpText>
       </Property>
     </Group>
-    <Group name="Studiopolis" display="4. Studiopolis Zone">
+    <Group name="Studiopolis" display="Example group taken from my mod">
       <Property name="s1" type="Studiopolis" defaultvalue="1" display="Act 1">
         <HelpText>Orchestrates the theme in Studiopolis Zone Act 1.</HelpText>
       </Property>
