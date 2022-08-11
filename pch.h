@@ -3,7 +3,7 @@
 // This also affects IntelliSense performance, including code completion and many code browsing features.
 // However, files listed here are ALL re-compiled if any one of them is updated between builds.
 // Do not add files here that you will be updating frequently as this negates the performance advantage.
-// ^ yeah wtf are you even doing in here go away
+// ^ contains the headers that will be built. yeah wtf are you even doing in here go back to the actual code
 
 #ifndef PCH_H
 #define PCH_H
