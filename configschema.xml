@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<ConfigSchema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns="http://www.sonicretro.org">
+  <Groups>
+    <Group name="example1" display="Example Group">
+      <Property name="item1" type="Example Type" defaultvalue="1" display="Item 1">
+        <HelpText>Orchestrates the theme in Green Hill Zone Act 1.</HelpText>
+      </Property>
+      <Property name="gh2" type="Green Hill" defaultvalue="2" display="Act 2">
+        <HelpText>Orchestrates the theme in Green Hill Zone Act 2.</HelpText>
+      </Property>
+    </Group>
+    <Group name="Studiopolis" display="4. Studiopolis Zone">
+      <Property name="s1" type="Studiopolis" defaultvalue="1" display="Act 1">
+        <HelpText>Orchestrates the theme in Studiopolis Zone Act 1.</HelpText>
+      </Property>
+      <Property name="s2" type="Studiopolis" defaultvalue="1" display="Act 2">
+        <HelpText>Orchestrates the theme in Studiopolis Zone Act 2.</HelpText>
+      </Property>
+    </Group>
+  </Groups>
+  <Enums>
+    <Enum name="Example Enum">
+      <EnumMember name="1" display="Option 1"/>
+      <EnumMember name="2" display="Option 2"/>
+      <EnumMember name="3" display="Option 3"/>
+    </Enum>
+    <Enum name="Studiopolis">
+      <EnumMember name="0" display="Original"/>
+      <EnumMember name="1" display="Orchestrated"/>
+      <EnumMember name="2" display="Casino Night"/>
+      <EnumMember name="3" display="City Escape"/>
+      <EnumMember name="4" display="Rooftop Run"/>
+    </Enum>
+  </Enums>
+</ConfigSchema>

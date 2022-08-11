@@ -1,0 +1,11 @@
+# stuff i think shouldn't be in here
+.vs
+.vscode
+bin
+Release
+*.dll
+*.exp
+*.lib
+*.pdb
+*.filters
+*.user
