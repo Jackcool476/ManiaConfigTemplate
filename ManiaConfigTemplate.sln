@@ -8,9 +8,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ManiaConfigTemplate", "Mani
 		{EC0293F5-4BCF-46B2-8133-18CAEA141C5B} = {EC0293F5-4BCF-46B2-8133-18CAEA141C5B}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ManiaModLoader", "mania-mod-loader\ManiaModLoader\ManiaModLoader.vcxproj", "{DAC43A3C-6A1A-4755-BDF7-C72FB7201965}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ModLoaderCommon", "mod-loader-common\ModLoaderCommon\ModLoaderCommon.vcxproj", "{EC0293F5-4BCF-46B2-8133-18CAEA141C5B}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ModLoaderCommon", "mania-mod-loader\mod-loader-common\ModLoaderCommon\ModLoaderCommon.vcxproj", "{EC0293F5-4BCF-46B2-8133-18CAEA141C5B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,8 +17,6 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{93DCD7E0-2357-4969-8722-A69A26CEBC0A}.Release|x86.ActiveCfg = Release|Win32
 		{93DCD7E0-2357-4969-8722-A69A26CEBC0A}.Release|x86.Build.0 = Release|Win32
-		{DAC43A3C-6A1A-4755-BDF7-C72FB7201965}.Release|x86.ActiveCfg = Release|Win32
-		{DAC43A3C-6A1A-4755-BDF7-C72FB7201965}.Release|x86.Build.0 = Release|Win32
 		{EC0293F5-4BCF-46B2-8133-18CAEA141C5B}.Release|x86.ActiveCfg = Release|Win32
 		{EC0293F5-4BCF-46B2-8133-18CAEA141C5B}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection

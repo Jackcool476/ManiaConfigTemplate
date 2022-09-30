@@ -1,9 +1,12 @@
 // IMPORTANT: If you build this, your mod will crash on boot what did you expect. If you want to build using this file, remove the template fucntions and items in the configschema.xml.
 //            The dll doesn't like it when you enter a file location which doesn't exist so that may also be a viable reason for your mod crashing.
 
-//            also remember to go copy all the stuff in mod-loader-common to mania-mod-loader/mod-loader-common
+#define WIN32_LEAN_AND_MEAN // angy, makes builds faster iirc
+#include <windows.h>
+#include <filesystem>
+#include "IniFile.hpp"
+#include "ManiaModLoader.h"
 
-#include "pch.h" // adds all the headers needed to build
 using std::string;               // makes the code way smaller 
 using namespace std::filesystem; // so you don't have to write it everywhere
 
@@ -15,34 +18,17 @@ extern "C" // ??? no idea ngl
 		string sprites = path + string("/Sprites/"); // an example of a folder containing your mod's data like sprites and music.
 		string modfolder = path + string("/Data/Sprites/"); // an example of a folder where you will put your mod's data according to the config.
 
-		if (config->getInt("Green Hill", "gh1", 1) == 1) // these whole 
+		// Example of Chemical Plant section from my mania mod
+		string datas = path + string("/Data/Stages/");
+		string stages = path + string("/Stages/");
+		if (config->getBool("Chemical Plant", "cp1", true))
 		{
-			copy_file(music + "GreenHill.brstm", data + "GreenHill1.brstm", copy_options::overwrite_existing);
-		}
-		else if (config->getInt("Green Hill", "gh1", 1) == 2)
-		{
-			copy_file(music + "GreenHillEX.brstm", data + "GreenHill1.brstm", copy_options::overwrite_existing);
-		}
-		else
-		{
-			remove((data + "GreenHill1.brstm").c_str());
-		}
-
-		string data = path + string("/Data/Music/");
-		string music = path + string("/Music/");
-		// Green Hill
-		if (config->getInt("Green Hill", "gh1", 1) == 1)
-		{
-			copy_file(music + "GreenHill.brstm", data + "GreenHill1.brstm", copy_options::overwrite_existing);
-		}
-		else if (config->getInt("Green Hill", "gh1", 1) == 2)
-		{
-			copy_file(music + "GreenHillEX.brstm", data + "GreenHill1.brstm", copy_options::overwrite_existing);
+			copy_file(stages + "CPZ/Scene1.bin", datas + "CPZ/Scene1.bin", copy_options::overwrite_existing);
 		}
 		else
 		{
-			remove((data + "GreenHill1.brstm").c_str());
+			remove(datas + "CPZ/Scene1.bin)");
 		}
 	}
-	__declspec(dllexport) ModInfo ManiaModInfo = { ModLoaderVer, GameVer };
+	__declspec(dllexport) ModInfo ManiaModInfo = { ModLoaderVer, GameVer }; // Adds dll info so it likey idk
 }

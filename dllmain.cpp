@@ -1,6 +1,8 @@
 // dllmain.cpp : Defines the entry point for the DLL application.
 // ^ what random ms employee said. dont touch this unless you are 100% sure of what youre doing.
-#include "pch.h"
+
+#define WIN32_LEAN_AND_MEAN // angy, makes builds faster iirc
+#include <windows.h>
 
 BOOL APIENTRY DllMain( HMODULE hModule,
                        DWORD  ul_reason_for_call,
